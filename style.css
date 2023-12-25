@@ -35,7 +35,7 @@ nav ul li {
 } */
 
 .hero {
-    background-image: url('./photos/siwa.jpeg');
+    background-image: url('siwa.jpeg');
     background-size: cover;
     background-position: center;
     color: #fff;
