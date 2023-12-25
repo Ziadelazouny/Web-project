@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+.result-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 25px;
+    transition: 0.3s;
+
+
+}
+
+.result-item:hover {
+    transform: scale(1.05);
+}
+
+.hotel-details {
+    text-align: center;
+}
+
+.hotel-details h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hotel-details img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.hotel-details p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reserve-btn {
+    background-color: #250ea7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: #1a0688;
+}
+</style>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2> Book trips </h2>
+        </div>
+
+        <ul>
+            <li> <a class="user" href="signin.php">sign in </a></li>
+            <li> <a class="user" href="signup.php">register</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <!-- Hero content goes here -->
+        <div class="search-bar">
+            <input type="text" placeholder="Enter destination">
+            <input type="date" placeholder="Check-in">
+            <input type="date" placeholder="Check-out">
+            <input type="number" placeholder="Guests">
+            <button id="search-btn">Search</button>
+        </div>
+    </section>
+    <br>
+    <h2> Offers In Egypt : </h2>
+    <p>Promotions, deals, and special offers for you</p>
+    <br>
+    <section class="search-results">
+        <!-- Search results go here -->
+        <ul id="hotels">
+            <li >
+            <div class="result-item">
+    <div class="hotel-details">
+        <h3>steignberger alcazar </h3>
+        <img src="./photos/steignberger.jpg" alt="Hotel Image">
+        <p class="price">from 1200 EGP</p>
+        <p class="description">"Savor Nile views, luxury, and serenity in our riverside retreat."</p>
+        <button class="reserve-btn">Reserve</button>
+    </div>
+</div>
+            </li>
+            <li>
+            <div class="result-item">
+    <div class="hotel-details">
+        <h3>Grand Towers</h3>
+        <img src="./photos/steignberger.jpg" alt="Hotel Image">
+        <p class="price">from 1200 EGP</p>
+        <p class="description">"Savor Nile views, luxury, and serenity in our riverside retreat."</p>
+        <button class="reserve-btn">Reserve</button>
+    </div>
+            </li>
+            <li>
+            <div class="result-item">
+    <div class="hotel-details">
+        <h3>Grand Towers</h3>
+        <img src="./photos/steignberger.jpg" alt="Hotel Image">
+        <p class="price">from 1200 EGP</p>
+        <p class="description">"Savor Nile views, luxury, and serenity in our riverside retreat."</p>
+        <button class="reserve-btn">Reserve</button>
+    </div>
+            </li>
+            <li>
+            <div class="result-item">
+    <div class="hotel-details">
+        <h3>Grand Towers</h3>
+        <img src="./photos/steignberger.jpg" alt="Hotel Image">
+        <p class="price">from 1200 EGP</p>
+        <p class="description">"Savor Nile views, luxury, and serenity in our riverside retreat."</p>
+        <button class="reserve-btn">Reserve</button>
+    </div>
+            </li>
+            <li>
+            <div class="result-item">
+    <div class="hotel-details">
+        <h3>Grand Towers</h3>
+        <img src="./photos/steignberger.jpg" alt="Hotel Image">
+        <p class="price">from 1200 EGP</p>
+        <p class="description">"Savor Nile views, luxury, and serenity in our riverside retreat."</p>
+        <button class="reserve-btn">Reserve</button>
+    </div>
+            </li>
+        </ul>
+    </section>
+    <br>
+    <br>
+    
+   
+    <br><br>
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="social-media-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="app-download">
+            <p style="color:white;">Download our app</p>
+            <button>Download</button>
+        </div>
+    </footer>
+</body>
+
+</html>
