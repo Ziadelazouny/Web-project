@@ -1,0 +1,1 @@
+to start the project you have to install xamapp application on your pc then start apache we server and my sql server then move the project folder to the htdocs folder inside the C:// partition on windows in xamapp folder you will fimd the htdocs folder 
