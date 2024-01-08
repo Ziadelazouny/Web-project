@@ -31,16 +31,11 @@
                 $servername = "localhost";
                 $username = "root";
                 $password = "";
-                $DB = "users";
+                $DataBase = "clients";
             
-                $conn = new mysqli($servername,$username,$password,$DB);
+                $conn = new mysqli($servername,$username,$password,$DataBase);
                 
-            
-               if(!$conn){
-                 echo"connection failed";
-                     die("Connection failed: " . mysqli_connect_error());
-                }
-                   
+             
               
             $phone=$_POST['phone'];
               $password=$_POST['password'];
