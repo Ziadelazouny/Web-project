@@ -105,9 +105,9 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $DB = "users";
+    $DataBase = "clients";
 
-    $conn = new mysqli($servername,$username,$password,$DB);
+    $conn = new mysqli($servername,$username,$password,$DataBase);
     
 
     if(!$conn){
